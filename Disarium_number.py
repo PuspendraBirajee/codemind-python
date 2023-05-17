@@ -1,0 +1,18 @@
+n=int(input())
+sum=0
+c=0
+p=n
+s=n
+while(n!=0):
+    r=n%10
+    c=c+1
+    n=n//10
+while(p!=0):
+    r=p%10
+    sum=sum+r**c
+    p=p//10
+    c=c-1
+if(sum==s):
+    print("True")
+else:
+    print("False")
